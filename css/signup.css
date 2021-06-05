@@ -171,7 +171,7 @@ nav label.cancel {
     font-weight: 600;
     color: #555;
     padding: 20px 10px 20px 5px;
-    width: 80%;
+    width: 60%;
 }
 
 .username,
@@ -258,11 +258,16 @@ input:-webkit-autofill:active {
         font-size: 1.1em;
         font-weight: 600;
         color: #555;
-        padding: 20px 10px 20px 5px;
+        padding: 20px 10px 10px 5px;
         width: 100%;
         text-align: center;
     }
     .svg-icon {
         display: none;
+    }
+    .unmask {
+        margin-bottom: 10px;
+        position: relative;
+        left: 40%;
     }
 }
