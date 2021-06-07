@@ -171,7 +171,7 @@ nav label.cancel {
     font-weight: 600;
     color: #555;
     padding: 20px 10px 20px 5px;
-    width: 60%;
+    width: 65%;
 }
 
 .username,
@@ -183,7 +183,7 @@ nav label.cancel {
     overflow: overlay;
 }
 
-.fields svg {
+.svg-icon {
     height: 22px;
     margin: 0 10px -3px 25px;
 }
@@ -229,6 +229,21 @@ nav label.cancel {
     color: #24cfaa;
 }
 
+.unmask {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.svg-unmask {
+    height: 25px;
+    margin: 0 10px -5px 15px;
+}
+
+.svg-unmask:hover {
+    cursor: pointer;
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -268,6 +283,10 @@ input:-webkit-autofill:active {
     .unmask {
         margin-bottom: 10px;
         position: relative;
-        left: 40%;
+        left: 45%;
+    }
+    .svg-unmask {
+        height: 22px;
+        margin: 0;
     }
 }
