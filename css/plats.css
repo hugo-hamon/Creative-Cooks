@@ -115,29 +115,84 @@ nav label.cancel {
 }
 
 
-/* CSS LOGIN FORM  */
+/* CSS PLAT CARDS  */
 
-.login-div {
+#card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
     color: #31344B;
     font-weight: 600;
-    width: 430px;
-    height: 700px;
+    width: 350px;
+    height: 650px;
     padding: 60px 35px 35px 35px;
     border-radius: 40px;
     background: #ecf0f3;
-    box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    transition: transform 250ms;
 }
 
-.login-logo {
-    background: url("../src/creative_cooks-icon.svg");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100px;
-    height: 100px;
+.title {
+    text-align: center;
+    height: 80px;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    text-align: center;
+    height: 80px;
+    font-size: 15px;
+    padding-top: 50px;
+    letter-spacing: 3px;
+}
+
+.card-1 {
+    box-shadow: 13px 13px 20px #d6d6d6, -13px -13px 20px #ffffff;
+}
+
+.card-1:hover {
+    box-shadow: 13px 13px 20px #cac1c1, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-2 {
+    box-shadow: 13px 13px 20px #ffd5d5, -13px -13px 20px #ffffff;
+}
+
+.card-2:hover {
+    box-shadow: 13px 13px 20px #f6b6b6, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-3 {
+    box-shadow: 13px 13px 20px #dcedff, -13px -13px 20px #ffffff;
+}
+
+.card-3:hover {
+    box-shadow: 13px 13px 20px #cbe3fd, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-4 {
+    box-shadow: 13px 13px 20px #faf3ce, -13px -13px 20px #ffffff;
+}
+
+.card-4:hover {
+    box-shadow: 13px 13px 20px #fdf1b4, -13px -13px 20px #ffffff;
+    transform: translateY(-20px);
+}
+
+.card-logo {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     margin: 0 auto;
     box-shadow: /* logo shadow */
@@ -147,50 +202,37 @@ nav label.cancel {
     -8px -8px 15px #ffffff;
 }
 
-.title {
-    text-align: center;
-    font-size: 28px;
-    padding-top: 24px;
-    letter-spacing: 0.5px;
+.card-1-logo {
+    background: url("../src/knives-icon.svg");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.sub-title {
-    text-align: center;
-    font-size: 15px;
-    padding-top: 7px;
-    letter-spacing: 3px;
+.card-2-logo {
+    background: url("../src/chef-icon.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.fields {
-    width: 100%;
-    padding: 75px 5px 5px 5px;
+.card-3-logo {
+    background: url("../src/chef_hat-icon.svg");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.fields input {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #555;
-    padding: 20px 10px 20px 5px;
-    width: 80%;
+.card-4-logo {
+    background: url("../src/star-icon.svg");
+    background-size: 80%;
+    background-position: center;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
 }
 
-.mail,
-.password {
-    margin-bottom: 30px;
-    border-radius: 25px;
-    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
-    overflow: overlay;
-}
-
-.fields svg {
-    height: 22px;
-    margin: 0 10px -3px 25px;
-}
-
-.login-button {
+.card-button {
+    margin-top: 90%;
     outline: none;
     border: none;
     cursor: pointer;
@@ -202,73 +244,57 @@ nav label.cancel {
     font-family: 'Lato', sans-serif;
     color: #fff;
     text-align: center;
-    background: #24cfaa;
     box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
     transition: 0.5s;
 }
 
-.login-button:hover {
-    background: #2fdbb6;
+.card-1-button {
+    background: #d6d6d6;
 }
 
-.login-button:active {
-    background: #1da88a;
+.card-1-button:hover {
+    background: #cacaca;
 }
 
-.link {
-    padding-top: 20px;
-    text-align: center;
+.card-1-button:active {
+    background: #b9b9b9;
 }
 
-.link a {
-    text-decoration: none;
-    color: #aaa;
-    font-size: 15px;
+.card-2-button {
+    background: #ffd5d5;
 }
 
-.link a:hover {
-    color: #31344B;
+.card-2-button:hover {
+    background: #f8cccc;
 }
 
-.login-statue {
-    text-align: center;
-    color: #DC143C;
+.card-2-button:active {
+    background: #ffbfbf;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    background-clip: text;
-    -webkit-background-clip: text;
+.card-3-button {
+    background: #d6eaff;
 }
 
-@media (max-width: 430px) {
-    .login-div {
-        color: #31344B;
-        font-weight: 600;
-        width: 100%;
-        height: 700px;
-        padding: 60px 35px 35px 35px;
-        border-radius: 40px;
-        background: #ecf0f3;
-        box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-    }
-    .fields input {
-        border: none;
-        outline: none;
-        background: none;
-        font-size: 1.1em;
-        font-weight: 600;
-        color: #555;
-        padding: 20px 10px 20px 5px;
-        width: 100%;
-        text-align: center;
-    }
-    .svg-icon {
-        display: none;
-    }
+.card-3-button:hover {
+    background: #cae4ff;
 }
+
+.card-3-button:active {
+    background: #b8d9fd;
+}
+
+.card-4-button {
+    background: #ffe97b;
+}
+
+.card-4-button:hover {
+    background: #ffe45f;
+}
+
+.card-4-button:active {
+    background: #ffdf40;
+}
+
+
+/* CSS FOOTER  */

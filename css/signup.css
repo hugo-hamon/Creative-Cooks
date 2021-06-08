@@ -133,6 +133,9 @@ nav label.cancel {
 
 .signup-logo {
     background: url("../src/creative_cooks-icon.svg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
     border-radius: 50%;
