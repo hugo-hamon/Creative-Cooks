@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ECF0F3;
+}
+
+
+/* CSS NAV BAR */
+
+nav {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #ECF0F3;
+    box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 5px #CECED1;
+}
+
+nav .menu {
+    max-width: 1270px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo a {
+    font-size: 28px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #31344B;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul a {
+    margin: 0 8px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #31344B;
+    display: inline-flex;
+    padding: 10px 12px;
+    box-shadow: -3px -3px 7px #FFFFFF, 3px 3px 5px #CECED1;
+    transition: all 0.3s ease;
+}
+
+.menu ul a:hover {
+    box-shadow: inset -3px -3px 7px #FFFFFF, inset 3px 3px 5px #CECED1;
+    color: #3489DB;
+}
+
+nav label.button {
+    color: #31344B;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+nav label.cancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 100%;
+        padding-top: 45px;
+        height: 100%;
+        background-color: #ECF0F3;
+        box-shadow: 0 5px 10px #B0B0B5;
+        z-index: 12;
+        transition: all 0.5s ease;
+    }
+    .menu ul a {
+        display: block;
+        font-size: 23px;
+        width: 100%;
+        margin-top: 30px;
+        box-shadow: none;
+        text-align: center;
+    }
+    .menu ul a:hover {
+        box-shadow: inset none;
+    }
+    nav label.bars {
+        display: block;
+    }
+    #check:checked~label.bars {
+        display: none;
+    }
+    #check:checked~ul label.cancel {
+        display: block;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+
+/* Aliment partie */
+
+#page-title {
+    text-align: center;
+    margin: 4px 0 8px 0;
+    font-weight: 600;
+}
+
+.food-title {
+    text-align: left;
+    letter-spacing: .03em;
+    margin: 4px 0 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.all-food-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.grid-icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.separator {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #31344B;
+    width: 90%;
+    margin: auto;
+}
+
+.add-aliment-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#add-aliment-div {
+    text-align: center;
+    display: table;
+    width: 80px;
+    height: 80px;
+}
+
+.add-aliment-button {
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5), 10px 10px 15px rgba(70, 70, 70, 0.12);
+    border-radius: 50%;
+    outline: none;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    content: '\f011';
+    color: #7a7a7a;
+    font-size: 40px;
+}
+
+.add-aliment-button:hover {
+    color: #30fda4;
+}

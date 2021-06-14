@@ -1,8 +1,8 @@
 <?php
-if (!isset($_SESSION)) {
-    session_start();
-}
-include '../functions/nav_bar.php';
+    if (!isset($_SESSION)) {
+        session_start();
+    }
+    include '../functions/nav_bar.php';
 ?>
 
 <!DOCTYPE html>
